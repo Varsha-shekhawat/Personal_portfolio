@@ -1,0 +1,208 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #030712; /* gray-950 */
+    color: #d1d5db; /* gray-300 */
+}
+
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: none;
+    }
+}
+
+.cursor-dot,
+.cursor-outline {
+    pointer-events: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .cursor-dot,
+    .cursor-outline {
+        opacity: 1;
+    }
+}
+
+.cursor-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #60a5fa;
+}
+
+.cursor-outline {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(96, 165, 250, 0.2); 
+    border: 2px solid rgba(96, 165, 250, 0.5);
+}
+
+.cursor-outline.hover {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(192, 132, 252, 0.2); 
+    border: 2px solid rgba(192, 132, 252, 0.5);
+}
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.nav-link {
+    position: relative;
+    color: #d1d5db; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding: 4px 0;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #38bdf8, #c084fc); 
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background-color: #93c5fd;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.social-icon {
+    color: #9ca3af; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: white;
+    transform: translateY(-3px);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    bottom: -10px;
+    left: 20%;
+    background: linear-gradient(to right, #38bdf8, #c084fc);
+    border-radius: 2px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(to right, #38bdf8, #a855f7); 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(168, 85, 247, 0.3);
+}
+
+.profile-img {
+    border: 6px solid #1f2937;
+    box-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+}
+
+.card-interactive {
+    background-color: #111827; 
+    border-radius: 0.75rem; 
+    padding: 2rem;
+    border: 1px solid #1f2937; 
+    transform-style: preserve-3d; 
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: #111827;
+    border-radius: 0.5rem;
+    color: #d1d5db;
+    font-weight: 500;
+    border: 1px solid #1f2937;
+    transform-style: preserve-3d; 
+}
+
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.cert-card {
+    padding: 1.5rem 2rem;
+    background-color: #111827;
+    border-radius: 0.5rem;
+    border: 1px solid #1f2937;
+    width: 100%;
+    transform-style: preserve-3d; 
+    height: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.animated-section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animated-section.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
