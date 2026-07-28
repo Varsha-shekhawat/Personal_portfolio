@@ -1,313 +1,867 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Varsha Shekhawat - Portfolio</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- SEO -->
+    <title>Varsha Shekhawat — Software Engineer Portfolio</title>
+    <meta name="description" content="Varsha Shekhawat is a software engineer specializing in full-stack web development, AI-powered applications, and scalable software solutions. CSE student at VIT-AP University.">
+    <meta name="keywords" content="Varsha Shekhawat, software engineer, web developer, portfolio, React, Next.js, Python, AI, VIT-AP">
+    <meta name="author" content="Varsha Shekhawat">
+    <link rel="canonical" href="https://varsha-shekhawat.github.io/Personal-portfolio/">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Varsha Shekhawat — Software Engineer Portfolio">
+    <meta property="og:description" content="Resourceful software engineer with a passion for architecting web applications and engineering scalable solutions.">
+    <meta property="og:url" content="https://varsha-shekhawat.github.io/Personal-portfolio/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Varsha Shekhawat — Software Engineer Portfolio">
+    <meta name="twitter:description" content="Resourceful software engineer with a passion for architecting web applications and engineering scalable solutions.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩‍💻</text></svg>">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Varsha Shekhawat",
+        "url": "https://varsha-shekhawat.github.io/Personal-portfolio/",
+        "jobTitle": "Software Engineer",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Vellore Institute of Technology, Amaravati"
+        },
+        "knowsAbout": ["Java", "Python", "React.js", "Next.js", "Web Development", "AI"],
+        "sameAs": [
+            "https://www.linkedin.com/in/varsha-shekhawat-8a0121293",
+            "https://github.com/Varsha-shekhawat",
+            "https://leetcode.com/u/VarshaShekhawat/"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+    <!-- Skip to content (Accessibility) -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <div id="particles-js"></div>
+    <!-- ========== NAVBAR ========== -->
+    <header id="navbar" class="navbar" role="banner">
+        <div class="navbar__inner">
+            <a href="#" class="navbar__logo" aria-label="Varsha Shekhawat — Home">
+                <span class="logo-mark">VS</span>
+                <span class="logo-text">Varsha.</span>
+            </a>
 
-    <header id="navbar" class="bg-gray-900/70 backdrop-blur-lg shadow-lg fixed top-0 w-full z-50 transition-opacity duration-300 opacity-0">
-        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-white">Varsha Shekhawat</a>
-            <nav class="hidden md:flex space-x-4">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#certifications" class="nav-link">Certifications</a>
-                <a href="#contact" class="nav-link">Contact</a>
+            <nav class="navbar__links" role="navigation" aria-label="Main navigation">
+                <a href="#about" class="navbar__link">About</a>
+                <a href="#skills" class="navbar__link">Skills</a>
+                <a href="#projects" class="navbar__link">Projects</a>
+                <a href="#certifications" class="navbar__link">Certifications</a>
+                <a href="#experience" class="navbar__link">Experience</a>
+                <a href="#achievements" class="navbar__link">Achievements</a>
+                <a href="#contact" class="navbar__link">Contact</a>
             </nav>
+
+            <div class="navbar__actions">
+                <div class="navbar__socials">
+                    <a href="https://www.linkedin.com/in/varsha-shekhawat-8a0121293" target="_blank" rel="noopener noreferrer" class="navbar__social-icon" aria-label="LinkedIn Profile" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="navbar__social-icon" aria-label="GitHub Profile" title="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                </div>
+
+                <button class="btn btn--primary btn--sm navbar__cta open-resume-modal-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Resume
+                </button>
+            </div>
+
+            <!-- Mobile toggle -->
+            <button id="menu-toggle" class="navbar__toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
+
+        <!-- Mobile menu overlay -->
+        <div id="mobile-overlay" class="navbar__mobile-overlay"></div>
+
+        <!-- Mobile menu panel -->
+        <nav id="mobile-menu" class="navbar__mobile" role="navigation" aria-label="Mobile navigation">
+            <a href="#about" class="navbar__mobile-link">About</a>
+            <a href="#skills" class="navbar__mobile-link">Skills</a>
+            <a href="#projects" class="navbar__mobile-link">Projects</a>
+            <a href="#certifications" class="navbar__mobile-link">Certifications</a>
+            <a href="#experience" class="navbar__mobile-link">Experience</a>
+            <a href="#achievements" class="navbar__mobile-link">Achievements</a>
+            <a href="#contact" class="navbar__mobile-link">Contact</a>
+            <div class="navbar__mobile-cta">
+                <button class="btn btn--primary open-resume-modal-btn" style="width:100%">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Preview / Download Resume
+                </button>
+            </div>
+        </nav>
     </header>
-    <section id="hero" class="h-screen flex flex-col justify-center items-center text-center text-white relative z-10 px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-4">Hi, I'm Varsha Shekhawat</h1>
-        <p class="text-2xl md:text-4xl font-medium mb-8">
-            I am <span id="typing-text" class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-bold"></span><span class="cursor">&nbsp;</span>
-        </p>
-        <div class="flex space-x-6 mb-8">
-            <a href="https://www.linkedin.com/in/varsha-shekhawat-8a0121293?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer" class="social-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-            </a>
-            <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="social-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-        </div>
-        <div>
-            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-primary">Download Resume</a>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero" class="hero">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <p class="hero__greeting reveal">Hello, I'm</p>
+                <h1 class="hero__name reveal reveal--delay-1">Varsha Shekhawat</h1>
+                <div class="hero__typing-wrapper reveal reveal--delay-2">
+                    I am <span id="typed-text" class="typed-text"></span><span class="cursor-blink" aria-hidden="true"></span>
+                </div>
+                <p class="hero__tagline reveal reveal--delay-3">
+                    Building thoughtful software with attention to detail — from AI-powered platforms to scalable backend web applications.
+                </p>
+
+                <div class="hero__actions reveal reveal--delay-3">
+                    <button class="btn btn--primary open-resume-modal-btn" id="hero-resume-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                        Preview Resume
+                    </button>
+                    <a href="#contact" class="btn btn--secondary" id="hero-contact-btn">Get in Touch</a>
+                </div>
+
+                <div class="hero__socials reveal reveal--delay-4">
+                    <a href="https://www.linkedin.com/in/varsha-shekhawat-8a0121293" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://leetcode.com/u/VarshaShekhawat/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LeetCode Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Live Dashboard Slider -->
+            <div class="hero__dashboard-wrapper reveal reveal--delay-2">
+                <div class="hero-dash">
+                    <div class="hero-dash__controls">
+                        <button class="hero-dash__tab active" data-tab="github" id="tab-btn-github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub Live
+                        </button>
+                        <button class="hero-dash__tab" data-tab="leetcode" id="tab-btn-leetcode">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                            LeetCode Live
+                        </button>
+                    </div>
+
+                    <div class="hero-dash__slides">
+                        <!-- GitHub Slide -->
+                        <div class="hero-dash__slide active" id="slide-github">
+                            <div class="stat-card">
+                                <div class="stat-card__header">
+                                    <div class="stat-card__user">
+                                        <div class="stat-card__platform-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="stat-card__title">GitHub</h3>
+                                            <span class="stat-card__handle">@Varsha-shekhawat</span>
+                                        </div>
+                                    </div>
+                                    <span class="badge">Live</span>
+                                </div>
+
+                                <div class="stat-card__metrics">
+                                    <div>
+                                        <div class="stat-card__metric-val" id="gh-repos-val">10+</div>
+                                        <div class="stat-card__metric-lbl">Public Repos</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-card__metric-val" id="gh-followers-val">5+</div>
+                                        <div class="stat-card__metric-lbl">Followers</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-card__metric-val" id="gh-streak-val">Active</div>
+                                        <div class="stat-card__metric-lbl">Contributions</div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card__chart-wrapper">
+                                    <img src="https://ghchart.rshah.org/C1502E/Varsha-shekhawat" alt="GitHub Contribution Graph" class="stat-card__chart-img" loading="lazy" width="300" height="90">
+                                </div>
+
+                                <div class="stat-card__actions">
+                                    <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" style="width: 100%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                        Visit GitHub Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- LeetCode Slide -->
+                        <div class="hero-dash__slide" id="slide-leetcode">
+                            <div class="stat-card">
+                                <div class="stat-card__header">
+                                    <div class="stat-card__user">
+                                        <div class="stat-card__platform-icon">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                                        </div>
+                                        <div>
+                                            <h3 class="stat-card__title">LeetCode</h3>
+                                            <span class="stat-card__handle">@VarshaShekhawat</span>
+                                        </div>
+                                    </div>
+                                    <span class="badge">Live</span>
+                                </div>
+
+                                <div class="stat-card__ring-wrapper">
+                                    <svg class="stat-card__ring-svg" viewBox="0 0 100 100">
+                                        <circle class="stat-card__ring-bg" cx="50" cy="50" r="40"></circle>
+                                        <circle class="stat-card__ring-progress" id="leetcode-ring" cx="50" cy="50" r="40" stroke-dasharray="251.2" stroke-dashoffset="180"></circle>
+                                    </svg>
+                                    <div class="stat-card__ring-content">
+                                        <div class="stat-card__ring-number" id="lc-total-solved">107</div>
+                                        <div class="stat-card__ring-label">Solved</div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card__metrics">
+                                    <div>
+                                        <div class="stat-card__metric-val stat-card__metric-val--easy" id="lc-easy-val">52</div>
+                                        <div class="stat-card__metric-lbl">Easy</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-card__metric-val stat-card__metric-val--medium" id="lc-medium-val">45</div>
+                                        <div class="stat-card__metric-lbl">Medium</div>
+                                    </div>
+                                    <div>
+                                        <div class="stat-card__metric-val stat-card__metric-val--hard" id="lc-hard-val">10</div>
+                                        <div class="stat-card__metric-lbl">Hard</div>
+                                    </div>
+                                </div>
+
+                                <div class="stat-card__actions">
+                                    <a href="https://leetcode.com/u/VarshaShekhawat/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm" style="width: 100%;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                                        View LeetCode Profile
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <main class="relative z-10">
-        <section id="about" class="py-20 scroll-mt-20 animated-section">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">About Me</h2>
-                <div class="flex flex-col md:flex-row items-center gap-12 mt-12 card-interactive" data-tilt>
-                    <img 
-                        src="photos/profile.jpg" 
-                        alt="Varsha Shekhawat" 
-                        class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover profile-img flex-shrink-0"
-                    >
-                    <div class="text-lg text-gray-300 leading-relaxed">
-                        <p>
-                            I am a dedicated and passionate Computer Science student at VIT-AP University. With a strong foundation in core CS concepts and hands-on experience with modern technologies, I am eager to apply my skills to solve real-world problems and contribute to innovative projects.
-                        </p>
-                        <br>
-                        <p>
-                            I am a quick learner, a collaborative team player, and always excited to take on new challenges in the tech world. My goal is to leverage my skills in software development to create meaningful and efficient solutions.
-                        </p>
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+
+        <!-- ========== ABOUT ========== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">About</span>
+                    <h2 class="section__title">About Me</h2>
+                </div>
+
+                <div class="about__box reveal">
+                    <div class="about__grid">
+                        <div class="about__image-wrapper">
+                            <img
+                                src="assets/images/profile.jpg?v=2"
+                                alt="Varsha Shekhawat — Software Engineer"
+                                class="about__image"
+                                loading="lazy"
+                                width="280"
+                                height="280"
+                            >
+                            <div class="about__image-decoration" aria-hidden="true"></div>
+                        </div>
+
+                        <div class="about__text">
+                            <p>
+                                I'm a fourth-year Computer Science student at VIT-AP University, currently focused on backend engineering and system design. I like understanding how systems actually hold up at scale — how services talk to each other, where they break, and how to design around that.
+                            </p>
+                            <p>
+                                Alongside coursework, I've been building full-stack and AI-powered projects, and interning at Celebal Technologies gave me a real taste of production-grade engineering. I'm most interested in the layer where clean architecture meets systems that need to just work — reliably, under load, without drama.
+                            </p>
+
+                            <div class="about__stats">
+                                <div class="about__stat">
+                                    <div class="about__stat-number">8.62</div>
+                                    <div class="about__stat-label">CGPA</div>
+                                </div>
+                                <div class="about__stat">
+                                    <div class="about__stat-number">7+</div>
+                                    <div class="about__stat-label">Certifications</div>
+                                </div>
+                                <div class="about__stat">
+                                    <div class="about__stat-number">2+</div>
+                                    <div class="about__stat-label">Major Projects</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="skills" class="py-20 bg-gray-900 scroll-mt-20 animated-section">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">My Skills</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 mt-12 text-center">
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon" alt="Java"/><span>Java</span></div>
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" class="skill-icon" alt="C++"/><span>C++</span></div>
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python"/><span>Python</span></div>
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React"/><span>React.js</span></div>
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML5"/><span>HTML5</span></div>
-                    <div class="skill-card" data-tilt><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS3"/><span>CSS3</span></div>
+
+        <!-- ========== SKILLS ========== -->
+        <section id="skills" class="section section--alt">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Expertise</span>
+                    <h2 class="section__title">Skills & Technologies</h2>
+                    <p class="section__subtitle">Tech stack and core CS fundamentals floating in smooth horizontal motion.</p>
                 </div>
-            </div>
-        </section>
-        <section id="projects" class="py-20 bg-gray-950 scroll-mt-20 animated-section">
-    <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="section-title">Projects</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-    
-    <div class="card-interactive flex flex-col h-full" data-tilt>
-        <h3 class="text-xl font-bold text-white mb-2">Personalised AI Learning</h3>
-        <p class="text-gray-400 mb-6 flex-grow">An AI-driven platform built with Flask and Gemini AI that generates customized learning paths.</p>
-        <a href="https://github.com/Varsha-shekhawat/personalised_ai_learning" target="_blank" class="text-blue-400 font-bold">View Source Code →</a>
-    </div>
 
-    <div class="card-interactive flex flex-col h-full" data-tilt>
-        <h3 class="text-xl font-bold text-white mb-2">AI-Career-Intelligence-Platform</h3>
-        <p class="text-gray-400 mb-6 flex-grow">Built an AI-powered career preparation platform for resume analysis and job matching using Next.js.</p>
-        <a href="https://github.com/Varsha-shekhawat/AI-Career-Platform" target="_blank" class="text-blue-400 font-bold">View Source Code →</a>
-    </div>
-    <div class="card-interactive flex flex-col h-full" data-tilt>
-        <h3 class="text-xl font-bold text-white mb-2">Spotify-clone</h3>
-        <p class="text-gray-400 mb-6 flex-grow">Built a basic clone of spotify using frontend skills.</p>
-        <a href="https://github.com/Varsha-shekhawat/Spotify-clone-enhanced" target="_blank" class="text-blue-400 font-bold">View Source Code →</a>
-    </div>
+                <div class="skills-marquee-wrapper reveal">
+                    <!-- Row 1: Languages, Frontend & Frameworks -->
+                    <div class="marquee-row marquee-row--left">
+                        <div class="marquee-track">
+                            <!-- Items set 1 -->
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-card__icon" alt="Java" loading="lazy" width="32" height="32"><span class="skill-card__name">Java</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-card__icon" alt="Python" loading="lazy" width="32" height="32"><span class="skill-card__name">Python</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-card__icon" alt="JavaScript" loading="lazy" width="32" height="32"><span class="skill-card__name">JavaScript</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-card__icon" alt="MySQL" loading="lazy" width="32" height="32"><span class="skill-card__name">MySQL</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-card__icon" alt="React.js" loading="lazy" width="32" height="32"><span class="skill-card__name">React.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="skill-card__icon" alt="Next.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Next.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-card__icon" alt="HTML5" loading="lazy" width="32" height="32"><span class="skill-card__name">HTML5</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-card__icon" alt="CSS3" loading="lazy" width="32" height="32"><span class="skill-card__name">CSS3</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="skill-card__icon" alt="Tailwind CSS" loading="lazy" width="32" height="32"><span class="skill-card__name">Tailwind CSS</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-card__icon" alt="Node.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Node.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="skill-card__icon" alt="Express.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Express.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="skill-card__icon" alt="Flask" loading="lazy" width="32" height="32"><span class="skill-card__name">Flask</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-card__icon" alt="PostgreSQL" loading="lazy" width="32" height="32"><span class="skill-card__name">PostgreSQL</span></div>
 
-</div>
-    </div>
-</section>
-        <section id="certifications" class="py-20 scroll-mt-20 animated-section">
-            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <h2 class="section-title">Certifications</h2>
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <a href="certificate.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Generative AI using IBM Watsonx</h3>
-                                    <p class="text-md text-gray-400">IBM Certified</p>
-                                </div>
-                            </div>
+                            <!-- Items set 1 duplicate for seamless loop -->
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-card__icon" alt="Java" loading="lazy" width="32" height="32"><span class="skill-card__name">Java</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-card__icon" alt="Python" loading="lazy" width="32" height="32"><span class="skill-card__name">Python</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-card__icon" alt="JavaScript" loading="lazy" width="32" height="32"><span class="skill-card__name">JavaScript</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-card__icon" alt="MySQL" loading="lazy" width="32" height="32"><span class="skill-card__name">MySQL</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-card__icon" alt="React.js" loading="lazy" width="32" height="32"><span class="skill-card__name">React.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" class="skill-card__icon" alt="Next.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Next.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-card__icon" alt="HTML5" loading="lazy" width="32" height="32"><span class="skill-card__name">HTML5</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-card__icon" alt="CSS3" loading="lazy" width="32" height="32"><span class="skill-card__name">CSS3</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" class="skill-card__icon" alt="Tailwind CSS" loading="lazy" width="32" height="32"><span class="skill-card__name">Tailwind CSS</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-card__icon" alt="Node.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Node.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="skill-card__icon" alt="Express.js" loading="lazy" width="32" height="32"><span class="skill-card__name">Express.js</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="skill-card__icon" alt="Flask" loading="lazy" width="32" height="32"><span class="skill-card__name">Flask</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-card__icon" alt="PostgreSQL" loading="lazy" width="32" height="32"><span class="skill-card__name">PostgreSQL</span></div>
                         </div>
-                    </a>
-                     <a href="3.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/1200px-Indian_Institute_of_Technology_Bombay_Logo.svg.png" alt="IIT Bombay Logo" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">National Entrepreneurship Challenge</h3>
-                                    <p class="text-md text-gray-400">E-Cell, IIT Bombay (Top 20)</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                     <a href="1.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://placehold.co/48x48/ffffff/111827?text=ML" alt="ML Club Logo" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Kaggle Contest Participation</h3>
-                                    <p class="text-md text-gray-400">The Machine Learning Club</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="Celebal.pdf.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://media.licdn.com/dms/image/v2/D560BAQGAuML4AG8JZw/company-logo_200_200/company-logo_200_200/0/1735543221444/celebaltechnologies_logo?e=2147483647&v=beta&t=Um_748k3eyHExWtCFUmKBOB-zAuccOYPEuwjrqnHANA" alt="Celebal Technologies" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Internship Certificate</h3>
-                                    <p class="text-md text-gray-400">Celebal Technologies, Jaipur</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="AWS_Academy_Graduate___Cloud_Foundations.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://d1.awsstatic.com/Digital%20Marketing/Display/campaigns/aws%20academy%20logo.6664a0fe4a9dc172659b1af0b1830a5f7dc7ed91.png" alt="AWS Academy" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">AWS Academy Graduate</h3>
-                                    <p class="text-md text-gray-400">Cloud Foundations</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="AWS_Cloud_Architecting.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://d1.awsstatic.com/Digital%20Marketing/Display/campaigns/aws%20academy%20logo.6664a0fe4a9dc172659b1af0b1830a5f7dc7ed91.png" alt="AWS Academy" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">AWS Academy Graduate</h3>
-                                    <p class="text-md text-gray-400">Cloud Architecting</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="oracle gen ai professional certificate.pdf" target="_blank" rel="noopener noreferrer">
-                        <div class="cert-card" data-tilt>
-                            <div class="flex items-center">
-                                <img src="https://tse4.mm.bing.net/th/id/OIP.UIn98dqVTeclf6U3lXO1TwHaHa?pid=Api&P=0&h=180" alt="Oracle Certificate" class="h-12 w-12 mr-5 bg-white p-1 rounded-md object-contain">
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Oracle Certified Professional</h3>
-                                    <p class="text-md text-gray-400"> Generative AI Professional</p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="py-20 bg-gray-900 scroll-mt-20 animated-section">
-            <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="mt-4 text-lg text-gray-400">
-                    I'm always open to discussing new opportunities or collaborations.
-                    <br>
-                    Feel free to reach out to me!
-                </p>
-                <div class="mt-12 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-                    <div class="flex items-center text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 text-blue-400"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                        <a href="mailto:varshashekhawatt@gmail.com" class="text-gray-300 hover:text-blue-400 transition-colors">varshashekhawatt@gmail.com</a>
                     </div>
-                    <div class="flex items-center text-lg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3 text-blue-400"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                        <span class="text-gray-300">+91 6367151890</span>
+
+                    <!-- Row 2: Databases, Cloud, AI, Tools & Core CS -->
+                    <div class="marquee-row marquee-row--right">
+                        <div class="marquee-track">
+                            <!-- Items set 2 -->
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-card__icon" alt="MongoDB" loading="lazy" width="32" height="32"><span class="skill-card__name">MongoDB</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="skill-card__icon" alt="SQLite" loading="lazy" width="32" height="32"><span class="skill-card__name">SQLite</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="skill-card__icon" alt="AWS" loading="lazy" width="32" height="32"><span class="skill-card__name">AWS</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="9" font-weight="600" font-family="Inter, sans-serif">AI</text></svg><span class="skill-card__name">Gemini AI</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="8" font-weight="600" font-family="Inter, sans-serif">IBM</text></svg><span class="skill-card__name">IBM Watsonx</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-card__icon" alt="Git" loading="lazy" width="32" height="32"><span class="skill-card__name">Git</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-card__icon" alt="GitHub" loading="lazy" width="32" height="32"><span class="skill-card__name">GitHub</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="skill-card__icon" alt="VS Code" loading="lazy" width="32" height="32"><span class="skill-card__name">VS Code</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" class="skill-card__icon" alt="Postman" loading="lazy" width="32" height="32"><span class="skill-card__name">Postman</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">DSA</text></svg><span class="skill-card__name">DSA</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">OOP</text></svg><span class="skill-card__name">OOP</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="6" font-weight="600" font-family="Inter, sans-serif">DBMS</text></svg><span class="skill-card__name">DBMS</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">OS</text></svg><span class="skill-card__name">Operating Systems</span></div>
+
+                            <!-- Items set 2 duplicate for seamless loop -->
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-card__icon" alt="MongoDB" loading="lazy" width="32" height="32"><span class="skill-card__name">MongoDB</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" class="skill-card__icon" alt="SQLite" loading="lazy" width="32" height="32"><span class="skill-card__name">SQLite</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" class="skill-card__icon" alt="AWS" loading="lazy" width="32" height="32"><span class="skill-card__name">AWS</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="9" font-weight="600" font-family="Inter, sans-serif">AI</text></svg><span class="skill-card__name">Gemini AI</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="8" font-weight="600" font-family="Inter, sans-serif">IBM</text></svg><span class="skill-card__name">IBM Watsonx</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-card__icon" alt="Git" loading="lazy" width="32" height="32"><span class="skill-card__name">Git</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="skill-card__icon" alt="GitHub" loading="lazy" width="32" height="32"><span class="skill-card__name">GitHub</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="skill-card__icon" alt="VS Code" loading="lazy" width="32" height="32"><span class="skill-card__name">VS Code</span></div>
+                            <div class="skill-card"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" class="skill-card__icon" alt="Postman" loading="lazy" width="32" height="32"><span class="skill-card__name">Postman</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">DSA</text></svg><span class="skill-card__name">DSA</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">OOP</text></svg><span class="skill-card__name">OOP</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="6" font-weight="600" font-family="Inter, sans-serif">DBMS</text></svg><span class="skill-card__name">DBMS</span></div>
+                            <div class="skill-card"><svg class="skill-card__icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="32" height="32"><rect width="32" height="32" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="7" font-weight="600" font-family="Inter, sans-serif">OS</text></svg><span class="skill-card__name">Operating Systems</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS ========== -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Work</span>
+                    <h2 class="section__title">Featured Projects</h2>
+                    <p class="section__subtitle">Systems, platforms, and AI applications built with clean architecture.</p>
+                </div>
+
+                <!-- Featured Project -->
+                <div class="project-featured reveal">
+                    <div class="project-featured__content">
+                        <span class="badge project-featured__badge">Featured Project</span>
+                        <h3 class="project-featured__title">AI Career Intelligence Platform</h3>
+                        <p class="project-featured__desc">
+                            An AI-powered platform that provides comprehensive career preparation — from resume analysis and AI-based feedback to job matching and interview preparation.
+                        </p>
+                        <ul class="project-featured__features">
+                            <li>Resume upload and AI-based feedback systems</li>
+                            <li>Job matching and interview preparation tools</li>
+                            <li>Modern dashboard architecture with reusable UI components</li>
+                            <li>Scalable frontend built with Next.js and Tailwind CSS</li>
+                        </ul>
+                        <div class="project-featured__tech">
+                            <span class="badge">Next.js</span>
+                            <span class="badge">Tailwind CSS</span>
+                            <span class="badge">PostgreSQL</span>
+                            <span class="badge badge--secondary">AI</span>
+                        </div>
+                        <div class="project-featured__actions">
+                            <a href="https://github.com/Varsha-shekhawat/AI-Career-Platform" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-featured__visual">
+                        <img src="assets/images/ai_career_platform.png?v=4" alt="AI Career Intelligence Platform Showcase" class="project-featured__image" loading="lazy">
+                    </div>
+                </div>
+
+                <!-- Other Projects -->
+                <div class="projects__grid">
+                    <div class="project-card reveal">
+                        <div class="project-card__header">
+                            <div class="project-card__icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://github.com/Varsha-shekhawat/personalised_ai_learning" target="_blank" rel="noopener noreferrer" class="project-card__link" aria-label="View AI Learning Path Generator source code">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-card__title">AI Learning Path Generator</h3>
+                        <p class="project-card__desc">
+                            A Generative AI application that creates custom beginner-to-expert learning paths. Uses Gemini 1.5 Flash to generate structured content including key concepts, resources, and progression milestones. Built with a responsive Flask backend delivering JSON-formatted responses.
+                        </p>
+                        <div class="project-card__tech">
+                            <span class="badge">Python</span>
+                            <span class="badge">Flask</span>
+                            <span class="badge">Google Gemini API</span>
+                            <span class="badge badge--secondary">Gen AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CERTIFICATIONS ========== -->
+        <section id="certifications" class="section section--alt">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Credentials</span>
+                    <h2 class="section__title">Certifications</h2>
+                    <p class="section__subtitle">Industry credentials in cloud engineering, system architecture, and generative AI.</p>
+                </div>
+
+                <div class="certificates__grid">
+                    <a href="assets/documents/certificates/ibm-watsonx-genai.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View IBM Watsonx Generative AI Certificate">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">Generative AI using IBM Watsonx</h3>
+                            <p class="cert-card__issuer">IBM Certified</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/oracle-genai-professional.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View Oracle GenAI Professional Certificate">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" alt="Oracle" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">OCI 2025 Generative AI Professional</h3>
+                            <p class="cert-card__issuer">Oracle Certified Professional</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/aws-cloud-foundations.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View AWS Cloud Foundations Certificate">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">AWS Academy Graduate</h3>
+                            <p class="cert-card__issuer">Cloud Foundations</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/aws-cloud-architecting.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View AWS Cloud Architecting Certificate">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">AWS Academy Graduate</h3>
+                            <p class="cert-card__issuer">Cloud Architecting</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/iit-bombay-nec.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View IIT Bombay NEC Certificate">
+                        <img src="assets/images/iit_bombay_logo.svg" alt="IIT Bombay" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">National Entrepreneurship Challenge</h3>
+                            <p class="cert-card__issuer">E-Cell, IIT Bombay — Top 20</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/celebal-internship.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View Celebal Technologies Internship Certificate">
+                        <img src="https://media.licdn.com/dms/image/v2/D560BAQGAuML4AG8JZw/company-logo_200_200/company-logo_200_200/0/1735543221444/celebaltechnologies_logo?e=2147483647&v=beta&t=Um_748k3eyHExWtCFUmKBOB-zAuccOYPEuwjrqnHANA" alt="Celebal Technologies" class="cert-card__logo" loading="lazy" width="52" height="52">
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">ReactJS Internship Certificate</h3>
+                            <p class="cert-card__issuer">Celebal Technologies, Jaipur</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+
+                    <a href="assets/documents/certificates/kaggle-ml-club.pdf" target="_blank" rel="noopener noreferrer" class="cert-card reveal" aria-label="View Kaggle Contest Certificate">
+                        <svg class="cert-card__logo" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" width="52" height="52"><rect width="52" height="52" rx="6" fill="#FDF4F1"/><text x="50%" y="55%" text-anchor="middle" dominant-baseline="middle" fill="#C1502E" font-size="13" font-weight="600" font-family="Inter, sans-serif">ML</text></svg>
+                        <div class="cert-card__info">
+                            <h3 class="cert-card__title">Kaggle Contest Participation</h3>
+                            <p class="cert-card__issuer">The Machine Learning Club</p>
+                        </div>
+                        <svg class="cert-card__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE ========== -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Experience</span>
+                    <h2 class="section__title">Experience & Leadership</h2>
+                    <p class="section__subtitle">Engineering internships, national hackathons, and organizational leadership.</p>
+                </div>
+
+                <div class="timeline">
+                    <!-- Celebal Technologies -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <span class="timeline__date">June 2025 – August 2025</span>
+                            <h3 class="timeline__role">ReactJS Intern</h3>
+                            <p class="timeline__org">Celebal Technologies — Remote</p>
+                            <ul class="timeline__desc">
+                                <li>Gained hands-on experience in front-end development using the React.js framework</li>
+                                <li>Built responsive, component-driven user interfaces following industry best practices</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="badge">React.js</span>
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">Frontend</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smart India Hackathon -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <span class="timeline__date">December 2024</span>
+                            <h3 class="timeline__role">Team Member</h3>
+                            <p class="timeline__org">Smart India Hackathon — National Level</p>
+                            <ul class="timeline__desc">
+                                <li>Collaborated on a time-sensitive project to solve real-world problem statements</li>
+                                <li>Worked in a cross-functional team under competitive conditions at a national-level hackathon</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="badge">Hackathon</span>
+                                <span class="badge">Teamwork</span>
+                                <span class="badge">Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrepreneurship Club -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <span class="timeline__date">2024 – 2025</span>
+                            <h3 class="timeline__role">Co-Lead, Sponsorship Team</h3>
+                            <p class="timeline__org">Entrepreneurship Club — VIT-AP</p>
+                            <ul class="timeline__desc">
+                                <li>Secured over ₹50,000 in cash sponsorships for major events by building corporate relationships</li>
+                                <li>Developed negotiation and business communication skills working with external partners</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="badge">Leadership</span>
+                                <span class="badge">Sponsorship</span>
+                                <span class="badge">Business Development</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Haryana Association -->
+                    <div class="timeline__item">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__card">
+                            <span class="timeline__date">2024 – 2025</span>
+                            <h3 class="timeline__role">Lead, Marketing Team</h3>
+                            <p class="timeline__org">Haryana Association — VIT-AP</p>
+                            <ul class="timeline__desc">
+                                <li>Directed marketing strategies to increase engagement and participation in association events</li>
+                                <li>Led a team to execute creative campaigns and coordinate event promotions</li>
+                            </ul>
+                            <div class="timeline__tags">
+                                <span class="badge">Marketing</span>
+                                <span class="badge">Team Management</span>
+                                <span class="badge">Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ========== ACHIEVEMENTS ========== -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Highlights</span>
+                    <h2 class="section__title">Achievements</h2>
+                    <p class="section__subtitle">Key milestones that reflect my commitment to growth and excellence.</p>
+                </div>
+
+                <div class="achievements__grid">
+                    <div class="achievement-card reveal">
+                        <div class="achievement-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 12 3 12 0v-5"/></svg>
+                        </div>
+                        <div class="achievement-card__content">
+                            <h3 class="achievement-card__number">8.62</h3>
+                            <p class="achievement-card__title">CGPA</p>
+                            <p class="achievement-card__desc">B.Tech Computer Science, VIT-AP University</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card reveal reveal--delay-1">
+                        <div class="achievement-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                        </div>
+                        <div class="achievement-card__content">
+                            <h3 class="achievement-card__number">National</h3>
+                            <p class="achievement-card__title">Smart India Hackathon</p>
+                            <p class="achievement-card__desc">Competed at the national level, solving real-world problem statements</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card reveal reveal--delay-2">
+                        <div class="achievement-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <div class="achievement-card__content">
+                            <h3 class="achievement-card__number">₹50,000+</h3>
+                            <p class="achievement-card__title">Sponsorship Secured</p>
+                            <p class="achievement-card__desc">Built corporate relationships as Co-Lead of Entrepreneurship Club sponsorship team</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card reveal reveal--delay-3">
+                        <div class="achievement-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <div class="achievement-card__content">
+                            <h3 class="achievement-card__number">Oracle</h3>
+                            <p class="achievement-card__title">OCI GenAI Professional</p>
+                            <p class="achievement-card__desc">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</p>
+                        </div>
+                    </div>
+
+                    <div class="achievement-card reveal reveal--delay-4">
+                        <div class="achievement-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <div class="achievement-card__content">
+                            <h3 class="achievement-card__number">IBM</h3>
+                            <p class="achievement-card__title">Watsonx GenAI Certified</p>
+                            <p class="achievement-card__desc">Generative AI using IBM Watsonx — IBM Certified</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="section section--alt">
+            <div class="container">
+                <div class="section__header reveal">
+                    <span class="section__label">Contact</span>
+                    <h2 class="section__title">Get in Touch</h2>
+                    <p class="section__subtitle">I'm always open to discussing new opportunities or collaborations.</p>
+                </div>
+
+                <div class="contact__grid">
+                    <!-- Contact Info -->
+                    <div class="contact__info-card reveal">
+                        <h3 class="contact__info-title">Let's connect</h3>
+                        <p class="contact__info-text">
+                            Whether you have a project idea, want to collaborate, or just want to say hi — feel free to reach out. I'd love to hear from you.
+                        </p>
+
+                        <div class="contact__details">
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact__detail-label">Email</span>
+                                    <div class="contact__detail-value">
+                                        <a href="mailto:varshashekhawatt@gmail.com">varshashekhawatt@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact__detail-label">Phone</span>
+                                    <div class="contact__detail-value">+91 6367151890</div>
+                                </div>
+                            </div>
+
+                            <div class="contact__detail">
+                                <div class="contact__detail-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div>
+                                    <span class="contact__detail-label">Location</span>
+                                    <div class="contact__detail-value">Amaravati, Andhra Pradesh</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__socials">
+                            <a href="https://www.linkedin.com/in/varsha-shekhawat-8a0121293" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="GitHub">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="https://leetcode.com/u/VarshaShekhawat/" target="_blank" rel="noopener noreferrer" class="hero__social-link" aria-label="LeetCode">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact__form-card reveal reveal--delay-1">
+                        <form id="contact-form" action="https://formspree.io/f/xpwzgvqo" method="POST">
+                            <div class="form__group">
+                                <label for="form-name" class="form__label">Name</label>
+                                <input type="text" id="form-name" name="name" class="form__input" placeholder="Your name" required autocomplete="name">
+                            </div>
+                            <div class="form__group">
+                                <label for="form-email" class="form__label">Email</label>
+                                <input type="email" id="form-email" name="email" class="form__input" placeholder="your@email.com" required autocomplete="email">
+                            </div>
+                            <div class="form__group">
+                                <label for="form-subject" class="form__label">Subject</label>
+                                <input type="text" id="form-subject" name="_subject" class="form__input" placeholder="What's this about?">
+                            </div>
+                            <div class="form__group">
+                                <label for="form-message" class="form__label">Message</label>
+                                <textarea id="form-message" name="message" class="form__textarea" placeholder="Tell me about your project or opportunity..." required rows="5"></textarea>
+                            </div>
+                            <input type="hidden" name="_template" value="table">
+                            <div id="form-success" class="form__success" style="display:none;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                                <span>Message sent successfully! I'll get back to you soon.</span>
+                            </div>
+                            <button type="submit" class="btn btn--primary form__submit" id="form-submit-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                Send Message
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-gray-950 py-8">
-    <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center text-gray-500">
-         
-        <p>&copy; 2025 Varsha Shekhawat. All Rights Reserved.</p>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__links">
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#projects" class="footer__link">Projects</a>
+                    <a href="#experience" class="footer__link">Experience</a>
+                    <a href="#achievements" class="footer__link">Achievements</a>
+                    <a href="#contact" class="footer__link">Contact</a>
+                </div>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/varsha-shekhawat-8a0121293" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/Varsha-shekhawat" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                    <a href="https://leetcode.com/u/VarshaShekhawat/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="LeetCode">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+                    </a>
+                </div>
+
+                <div class="footer__bottom">
+                    <span>&copy; 2025 Varsha Shekhawat. Crafted with care.</span>
+                </div>
+            </div>
+        </div>
+    <!-- ========== RESUME PREVIEW & DOWNLOAD MODAL ========== -->
+    <div id="resume-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
+        <div class="modal__backdrop" id="resume-modal-backdrop"></div>
+        <div class="modal__container">
+            <div class="modal__header">
+                <div class="modal__header-info">
+                    <h3 id="resume-modal-title" class="modal__title">Varsha Shekhawat — Resume</h3>
+                    <span class="modal__subtitle">PDF Document Preview</span>
+                </div>
+                <div class="modal__actions">
+                    <a href="assets/documents/Resume.pdf" download="Varsha_Shekhawat_Resume.pdf" class="btn btn--primary btn--sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download PDF
+                    </a>
+                    <button class="modal__close-btn" id="resume-modal-close" aria-label="Close modal">&times;</button>
+                </div>
+            </div>
+            <div class="modal__body">
+                <iframe src="assets/documents/Resume.pdf" title="Varsha Shekhawat Resume PDF" class="modal__iframe"></iframe>
+            </div>
+        </div>
     </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
-
-    <script>
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#ffffff" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.5, "random": false },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 },
-                "move": { "enable": true, "speed": 6, "direction": "none", "out_mode": "out" }
-            },
-            "interactivity": {
-                "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } },
-                "modes": { "repulse": { "distance": 100 }, "push": { "particles_nb": 4 } }
-            },
-            "retina_detect": true
-        });
-
-        const words = ["a CSE Student.", "a Web Developer.", "a Problem Solver."];
-        let i = 0, j = 0, currentWord = "", isDeleting = false;
-        const typingText = document.getElementById("typing-text");
-        function type() {
-            currentWord = words[i];
-            if (isDeleting) {
-                typingText.textContent = currentWord.substring(0, j - 1);
-                j--;
-                if (j == 0) { isDeleting = false; i++; if (i == words.length) i = 0; }
-            } else {
-                typingText.textContent = currentWord.substring(0, j + 1);
-                j++;
-                if (j == currentWord.length) { isDeleting = true; setTimeout(type, 2000); return; }
-            }
-            setTimeout(type, isDeleting ? 100 : 200);
-        }
-        type();
-
-        const navbar = document.getElementById('navbar');
-        window.onscroll = () => {
-            navbar.style.opacity = (window.pageYOffset > window.innerHeight - 100) ? '1' : '0';
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.classList.add('is-visible');
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.animated-section').forEach(section => observer.observe(section));
-
-        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
-		    max: 15,
-		    speed: 400,
-            glare: true,
-            "max-glare": 0.5
-	    });
-
-        const cursorDot = document.querySelector(".cursor-dot");
-        const cursorOutline = document.querySelector(".cursor-outline");
-
-        window.addEventListener("mousemove", function (e) {
-            const posX = e.clientX;
-            const posY = e.clientY;
-
-            cursorDot.style.left = `${posX}px`;
-            cursorDot.style.top = `${posY}px`;
-
-            cursorOutline.animate({
-                left: `${posX}px`,
-                top: `${posY}px`
-            }, { duration: 500, fill: "forwards" });
-        });
-
-        const interactiveElements = document.querySelectorAll("a, button, [data-tilt]");
-
-        interactiveElements.forEach((el) => {
-            el.addEventListener("mouseover", function (e) {
-                cursorOutline.classList.add("hover");
-            });
-            el.addEventListener("mouseleave", function (e) {
-                cursorOutline.classList.remove("hover");
-            });
-        });
-
-    </script>
-
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
 </body>
 </html>
