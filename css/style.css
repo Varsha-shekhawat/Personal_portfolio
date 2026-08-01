@@ -106,6 +106,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 img {
@@ -1467,18 +1469,22 @@ p {
 .stat-card__chart-wrapper {
   margin-bottom: var(--space-6);
   border-radius: var(--border-radius-sm);
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   border: 1px solid var(--border);
   background: var(--bg-primary);
   padding: var(--space-3);
   text-align: center;
+  -webkit-overflow-scrolling: touch;
 }
 
 .stat-card__chart-img {
   width: 100%;
+  max-width: 100%;
   height: auto;
   display: block;
   filter: contrast(1.05);
+  margin: 0 auto;
 }
 
 .stat-card__actions {
@@ -1878,8 +1884,14 @@ p {
   }
 
   .hero__inner {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     text-align: center;
+    gap: var(--space-8);
+  }
+
+  .hero__dashboard-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
   .hero__content {
@@ -2002,14 +2014,49 @@ p {
 /* Small mobile (≤480px) */
 @media (max-width: 480px) {
   :root {
-    --font-size-5xl: 2.25rem;
-    --font-size-4xl: 1.875rem;
-    --font-size-3xl: 1.5rem;
-    --font-size-2xl: 1.25rem;
+    --font-size-5xl: 2rem;
+    --font-size-4xl: 1.75rem;
+    --font-size-3xl: 1.35rem;
+    --font-size-2xl: 1.15rem;
   }
 
   .container {
     padding: 0 var(--space-4);
+  }
+
+  .hero__name {
+    font-size: 2rem;
+    word-break: break-word;
+  }
+
+  .hero__typing-wrapper {
+    font-size: 1.1rem;
+    min-height: 2.8em;
+  }
+
+  .hero-dash {
+    padding: var(--space-3);
+  }
+
+  .stat-card {
+    padding: var(--space-4);
+  }
+
+  .stat-card__metrics {
+    gap: var(--space-1);
+    padding: var(--space-2);
+  }
+
+  .stat-card__metric-val {
+    font-size: var(--font-size-base);
+  }
+
+  .stat-card__metric-lbl {
+    font-size: 0.7rem;
+  }
+
+  .stat-card__chart-wrapper {
+    padding: var(--space-2);
   }
 
   .hero__actions {
@@ -2027,31 +2074,58 @@ p {
     align-items: center;
   }
 
-  .skills__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-3);
+  .project-featured {
+    padding: var(--space-4);
   }
 
-  .project-featured {
-    padding: var(--space-6);
+  .project-featured__title {
+    font-size: var(--font-size-xl);
   }
 
   .project-card {
-    padding: var(--space-6);
+    padding: var(--space-4);
+  }
+
+  .cert-card {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .cert-card__logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .cert-card__title {
+    font-size: var(--font-size-sm);
   }
 
   .timeline__item {
-    padding-left: 44px;
+    padding-left: 36px;
   }
 
   .timeline::before {
-    left: 14px;
+    left: 10px;
   }
 
   .timeline__dot {
-    left: 6px;
+    left: 2px;
     width: 16px;
     height: 16px;
+  }
+
+  .modal__container {
+    width: 95%;
+    height: 90vh;
+    border-radius: var(--border-radius);
+  }
+
+  .modal__header {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .modal__title {
+    font-size: var(--font-size-lg);
   }
 }
 
