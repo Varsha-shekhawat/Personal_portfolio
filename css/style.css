@@ -1973,32 +1973,34 @@ p {
 
 /* Mobile layout & full hero intro screen */
 @media (max-width: 768px) {
+  .navbar__actions {
+    display: none !important;
+  }
+
   .hero {
-    min-height: calc(100vh - var(--navbar-height));
-    min-height: calc(100dvh - var(--navbar-height));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: calc(var(--navbar-height) + 1rem);
-    padding-bottom: 2rem;
-    box-sizing: border-box;
+    min-height: auto;
+    padding-top: var(--navbar-height);
+    padding-bottom: 3rem;
   }
 
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 0;
+    gap: 2rem;
     padding: 0 var(--space-4);
     text-align: center;
     width: 100%;
-    margin: auto 0;
   }
 
   .hero__content {
-    min-height: auto;
-    display: block;
+    min-height: calc(100vh - var(--navbar-height) + 50px);
+    min-height: calc(100dvh - var(--navbar-height) + 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-bottom: 0;
+    box-sizing: border-box;
+    padding: 1.5rem 0;
   }
 
   .hero__greeting {
