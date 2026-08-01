@@ -153,10 +153,19 @@
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16l-4-4 4-4"/><path d="M16 20l-4-4 4-4"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
                     </a>
                 </div>
+
+                <a href="#live-dash-mobile" class="hero__scroll-indicator reveal reveal--delay-4" aria-label="Scroll down to live stats dashboard">
+                    <span>Scroll to explore</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 13l5 5 5-5"/><path d="M12 19V6"/></svg>
+                </a>
             </div>
 
             <!-- Hero Live Dashboard Slider -->
-            <div class="hero__dashboard-wrapper reveal reveal--delay-2">
+            <div id="live-dash-mobile" class="hero__dashboard-wrapper reveal reveal--delay-2">
+                <div class="dash-mobile-header">
+                    <span class="section__label">Live Metrics</span>
+                    <h3 class="dash-mobile-title">Developer Dashboards</h3>
+                </div>
                 <div class="hero-dash">
                     <div class="hero-dash__controls">
                         <button class="hero-dash__tab active" data-tab="github" id="tab-btn-github">
