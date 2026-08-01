@@ -661,18 +661,30 @@ p {
   height: 20px;
 }
 
-/* Scroll Indicator */
+/* Scroll Indicator Pill */
 .hero__scroll-indicator {
   display: none;
   align-items: center;
   gap: var(--space-2);
-  margin-top: var(--space-6);
-  font-size: var(--font-size-xs);
+  margin-top: auto;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-full);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  font-size: 0.72rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.08em;
   color: var(--accent);
   text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all var(--transition-fast);
+}
+
+.hero__scroll-indicator:hover {
+  background: var(--bg-card);
+  border-color: var(--border-hover);
+  transform: translateY(-2px);
 }
 
 .hero__scroll-indicator svg {
@@ -2004,29 +2016,32 @@ p {
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding-top: calc(var(--navbar-height) + 1rem);
+    padding-top: calc(var(--navbar-height) + 0.5rem);
     padding-bottom: 2rem;
   }
 
   .hero__inner {
     grid-template-columns: 1fr;
-    gap: 2.5rem;
+    gap: 2rem;
     padding: 0 var(--space-4);
   }
 
   .hero__content {
-    min-height: calc(100vh - var(--navbar-height) - 2rem);
-    min-height: calc(100dvh - var(--navbar-height) - 2rem);
+    min-height: calc(100vh - var(--navbar-height) - 1rem);
+    min-height: calc(100dvh - var(--navbar-height) - 1rem);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding-bottom: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 
   .hero__scroll-indicator {
     display: inline-flex;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
   }
 
   .dash-mobile-header {
