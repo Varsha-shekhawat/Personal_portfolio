@@ -841,58 +841,26 @@
     <!-- ========== RESUME PREVIEW & DOWNLOAD MODAL ========== -->
     <div id="resume-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="resume-modal-title">
         <div class="modal__backdrop" id="resume-modal-backdrop"></div>
-        <div class="modal__container modal__container--resume">
+        <div class="modal__container">
             <div class="modal__header">
                 <div class="modal__header-info">
                     <h3 id="resume-modal-title" class="modal__title">Varsha Shekhawat — Resume</h3>
-                    <span class="modal__subtitle">Verified PDF Document</span>
+                    <span class="modal__subtitle">PDF Document Preview</span>
                 </div>
-                <button class="modal__close-btn" id="resume-modal-close" aria-label="Close modal">&times;</button>
+                <div class="modal__actions">
+                    <a href="assets/documents/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        Open in New Tab
+                    </a>
+                    <a href="assets/documents/Resume.pdf" download="Varsha_Shekhawat_Resume.pdf" class="btn btn--primary btn--sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        Download PDF
+                    </a>
+                    <button class="modal__close-btn" id="resume-modal-close" aria-label="Close modal">&times;</button>
+                </div>
             </div>
-            <div class="modal__body modal__body--resume-card">
-                <div class="resume-card">
-                    <div class="resume-card__top">
-                        <div class="resume-card__file-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-                            <div>
-                                <span class="resume-card__filename">Varsha_Shekhawat_Resume.pdf</span>
-                                <span class="resume-card__filesize">151 KB • Official Document</span>
-                            </div>
-                        </div>
-                        <span class="badge badge--success">Ready for Review</span>
-                    </div>
-
-                    <div class="resume-card__details">
-                        <h4 class="resume-card__candidate-name">Varsha Shekhawat</h4>
-                        <p class="resume-card__candidate-title">B.Tech Computer Science & Engineering | Software Engineer</p>
-
-                        <div class="resume-card__grid">
-                            <div class="resume-card__item">
-                                <span class="resume-card__label">Degree & Education</span>
-                                <p class="resume-card__val">VIT-AP University — B.Tech CSE (8.75 CGPA)</p>
-                            </div>
-                            <div class="resume-card__item">
-                                <span class="resume-card__label">Core Expertise</span>
-                                <p class="resume-card__val">Full Stack Web Dev, Python, Java, React, Node.js, Express, MongoDB, SQL</p>
-                            </div>
-                            <div class="resume-card__item">
-                                <span class="resume-card__label">Certifications & Achievements</span>
-                                <p class="resume-card__val">AWS Cloud, Oracle GenAI, IBM Watsonx, IIT Bombay NEC National Winner</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="resume-card__actions">
-                        <a href="assets/documents/Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                            View Full PDF in New Tab
-                        </a>
-                        <a href="assets/documents/Resume.pdf" download="Varsha_Shekhawat_Resume.pdf" class="btn btn--secondary">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                            Download PDF Document
-                        </a>
-                    </div>
-                </div>
+            <div class="modal__body">
+                <iframe src="assets/documents/Resume.pdf" title="Varsha Shekhawat Resume PDF" class="modal__iframe"></iframe>
             </div>
         </div>
     </div>
