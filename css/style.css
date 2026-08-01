@@ -2447,6 +2447,107 @@ button:focus:not(:focus-visible) {
   background: #f0f0f0;
 }
 
+.modal__container--resume {
+  max-width: 680px;
+  height: auto;
+  max-height: 90vh;
+}
+
+.modal__body--resume-card {
+  padding: var(--space-6);
+  background: var(--bg-primary);
+  overflow-y: auto;
+}
+
+.resume-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.resume-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.resume-card__file-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--accent);
+}
+
+.resume-card__filename {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: var(--font-size-base);
+  color: var(--text-primary);
+}
+
+.resume-card__filesize {
+  display: block;
+  font-size: var(--font-size-xs);
+  color: var(--text-tertiary);
+}
+
+.resume-card__candidate-name {
+  font-family: var(--font-heading);
+  font-size: var(--font-size-2xl);
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.resume-card__candidate-title {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.resume-card__grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  background: var(--bg-secondary);
+  padding: var(--space-5);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border);
+}
+
+.resume-card__label {
+  display: block;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-tertiary);
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.resume-card__val {
+  font-size: var(--font-size-sm);
+  color: var(--text-primary);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.resume-card__actions {
+  display: flex;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.resume-card__actions .btn {
+  flex: 1;
+  min-width: 200px;
+  justify-content: center;
+}
+
 .modal__iframe {
   display: block;
   width: 100%;
